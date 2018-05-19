@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="width" constant="200" id="fxD-N6-mYB"/>
                                 </constraints>
                                 <state key="normal" title="Add Name"/>
+                                <connections>
+                                    <action selector="addNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6O-Sx-jZk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,6 +56,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="0Pd-3J-SOF" id="Mzb-ia-uut"/>
+                        <outlet property="nameTextField" destination="0jg-LS-G6U" id="zy0-nV-lqq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

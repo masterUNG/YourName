@@ -9,11 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+//    Implicit
+    var nameString = ""
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    
+    @IBAction func addNameButton(_ sender: Any) {
+        
+//        Pring Log on Console
+        print("Click Add Name Button")
+        
+//        Get Value From TextField
+        nameString = nameTextField.text!
+        
+//        Pring Value to Console
+        print("nameString = \(nameString)")
+        
+//        Show Value to Label
+        nameLabel.text = nameString
+        
+        nameTextField.text = ""
+        
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+    }   // Main Fuction
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -21,5 +54,5 @@ class ViewController: UIViewController {
     }
 
 
-}
+}   // Main Class
 
